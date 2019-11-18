@@ -1,3 +1,3 @@
 Snake in console, used f#
-![](Snakef#.gif)
+![](Snakef.gif)
 

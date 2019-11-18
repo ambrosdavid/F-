@@ -1,0 +1,50 @@
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\Snake.XML
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\FSharp.Core.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\System.ValueTuple.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\FSharp.Core.xml
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\System.ValueTuple.xml
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\cs\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\de\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\en\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\es\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\fr\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\it\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\ja\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\ko\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\pl\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\pt-BR\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\ru\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\tr\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\zh-Hans\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\bin\Debug\zh-Hant\FSharp.Core.resources.dll
+C:\Users\Stryker\source\repos\Snake\Snake\obj\Debug\Snake.fsprojAssemblyReference.cache
+C:\Users\Stryker\source\repos\Snake\Snake\obj\Debug\Snake.fsproj.CopyComplete
+C:\Users\Stryker\source\repos\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\Stryker\source\repos\Snake\Snake\obj\Debug\Snake.pdb
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\Snake.XML
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\FSharp.Core.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\System.ValueTuple.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\FSharp.Core.xml
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\System.ValueTuple.xml
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\cs\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\de\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\en\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\es\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\fr\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\it\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\ja\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\ko\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\pl\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\pt-BR\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\ru\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\tr\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\zh-Hans\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\bin\Debug\zh-Hant\FSharp.Core.resources.dll
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\Utente\Documents\Visual Studio 2017\Projects\Snake\Snake\obj\Debug\Snake.pdb

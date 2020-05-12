@@ -1,0 +1,176 @@
+            
+        (*   
+            //1=su
+            //2=destra
+            //3=giu
+            let avanza numero pos=
+                match numero with
+                (*numero when (fst(pos) > this.grandezza) || (fst(pos) <=(0)) || (snd(pos) <=(-1))|| (snd(pos) >this.grandezza) ->printfn "QUA"
+                                                                                                                                (pos)
+                *)
+                |1->if not(fst(pos)-1<=0) then
+                        my2dArray.[(fst(pos))-1,snd(pos)]<-true
+                        (fst(pos)-2, snd(pos))
+                     else (pos)         
+                |2->if(snd(pos)+1<this.grandezza) then
+                        my2dArray.[fst(pos),snd(pos)+1]<-true
+                        (fst(pos), snd(pos)+2)
+                    else (pos)
+                |3->if(fst(pos)+1<this.grandezza) then
+                        my2dArray.[fst(pos)+1,snd(pos)]<-true
+                        (fst(pos)+2, snd(pos))
+                    else (pos)
+                                
+            
+            let rec genera (gn:int) (pos:(int*int)) (oldDir)   =
+                match (pos) with
+                (pos) when (fst(pos) > gn) || (fst(pos) <(0)) || (snd(pos) <=(-1))|| (snd(pos) >gn) ->[]
+                |(x,y)->my2dArray.[fst(pos),snd(pos)]<-true
+                        
+                        let mutable currPos=nextInt.Next(1,4)
+                        
+                        while ((oldDir=currPos) || (oldDir-currPos=(-2)) || (oldDir-currPos=2) || (currPos-oldDir=2) || (currPos-oldDir=(-2))) do 
+                            let temp=nextInt.Next(1,4)
+                            currPos<-temp
+                        //printfn "CurrPos %A  " currPos
+                        
+                        let newPos=avanza (currPos) pos
+                        (x,y)::(genera gn newPos currPos)
+            *)
+(*
+            let rec generaAux (l:(int*int) list)=
+                
+                match l with
+                []->[]
+                |x::xs->if(haSpazioSx (fst(x),snd(x)-1)) then
+                            my2dArray.[fst(x),snd(x)-1]<-true 
+                            (fst(x),snd(x)-1)::(generaAux xs)
+                        else if(haSpazioDx (fst(x),snd(x)+1)) then
+                            my2dArray.[fst(x),snd(x)+1]<-true 
+                            (fst(x),snd(x)+1)::(generaAux xs)
+                        else if(haSpazioSu (fst(x)-1,snd(x))) then
+                            my2dArray.[fst(x)-1,snd(x)]<-true 
+                            (fst(x)-1,snd(x))::(generaAux xs)
+                        else if(haSpazioGiu (fst(x)+1,snd(x))) then
+                            my2dArray.[fst(x)+1,snd(x)]<-true 
+                            (fst(x)+1,snd(x))::(generaAux xs)
+                        else generaAux xs
+                        
+             
+            soluzione<-soluzione@(genera (grandezza-1) posIniziale 1)
+            let newList=[for i in 3..soluzione.Length-3 do yield soluzione.Item(i)]
+
+            
+            let rec generaFull l count=     
+                match count with
+                0->()
+                |n->generaFull (generaAux l) (count-1)
+            
+            generaFull (newList) 1000 
+            
+            
+            //1=sinistra
+            //2=su
+            //3=destra
+            let avanzaSU numero pos=
+                match numero with
+                //numero when (fst(pos) > this.grandezza) || (fst(pos) <=(-1)) || (snd(pos) <=(-1))|| (snd(pos) >this.grandezza) ->printfn "QUA"
+                //                                                                                                                 (pos)
+                |1->if not(snd(pos)-1<0) then
+                        if(my2dArray.[(fst(pos)),snd(pos)-1]=false && haSpazioSx((fst(pos)),snd(pos)-1))then
+                            my2dArray.[(fst(pos)),snd(pos)-1]<-true
+                        else()
+                        (fst(pos), snd(pos)-2)
+                     else (pos)         
+                |2->if not(fst(pos)-1<=(0)) then
+                        if(my2dArray.[fst(pos)-1,snd(pos)]=false && haSpazioSu(fst(pos)-1,snd(pos)))then
+                            my2dArray.[fst(pos)-1,snd(pos)]<-true
+                        else ()
+                        (fst(pos)-2, snd(pos))//!!!
+                    else (pos)
+                |3->if(snd(pos)+1<this.grandezza) then
+                        if(my2dArray.[fst(pos),snd(pos)+1]=false && haSpazioDx(fst(pos),snd(pos)+1))then
+                            my2dArray.[fst(pos),snd(pos)+1]<-true
+                        else()
+                        (fst(pos), snd(pos)+2)
+                    else (pos)
+
+            let rec generaSU (n) (pos:(int*int)) (oldDir):unit   =
+                match (pos) with
+                (pos) when (snd(pos) <= 1) || (fst(pos) <=(0)) || (snd(pos) <=(-1))|| (snd(pos) >this.grandezza-3) || n=0->()
+                |(x,y)->if(my2dArray.[fst(pos),snd(pos)]=false && haSpazioSu(fst(pos),snd(pos))) then
+                            my2dArray.[fst(pos),snd(pos)]<-true
+                        else
+                            let mutable currPos=nextInt.Next(1,4)
+                        
+                            while ((oldDir=currPos)|| (oldDir-currPos=(-2)) || (oldDir-currPos=2) || (currPos-oldDir=2) || (currPos-oldDir=(-2))) do 
+                                let temp=nextInt.Next(1,4)
+                                currPos<-temp
+                            //printfn "CurrPos %A  " currPos
+                        
+                            let newPos=avanzaSU (currPos) pos
+                            generaSU (n-1) newPos currPos
+            //generaSU (10,10) 1
+
+
+            //1=sinistra
+            //2=giu
+            //3=destra
+            let avanzaGIU numero pos=
+                match numero with
+                //numero when (fst(pos) > this.grandezza) || (fst(pos) <=(-1)) || (snd(pos) <=(-1))|| (snd(pos) >this.grandezza) ->printfn "QUA"
+                //                                                                                                                 (pos)
+                |1->if not(snd(pos)-1<0) then
+                        if(my2dArray.[(fst(pos)),snd(pos)-1]=false && haSpazioSx(fst(pos),snd(pos)+1))then
+                            my2dArray.[(fst(pos)),snd(pos)-1]<-true
+                        else ()
+                        (fst(pos), snd(pos)-2)
+                     else (pos)         
+                |2->if (fst(pos)+1<=this.grandezza-1) then
+                        if(my2dArray.[fst(pos)+1,snd(pos)]=false && haSpazioGiu(fst(pos)+1,snd(pos)) ) then
+                            my2dArray.[fst(pos)+1,snd(pos)]<-true
+                        else ()
+                        (fst(pos)+2, snd(pos))//!!!
+                    else (pos)
+                |3->if(snd(pos)+1<this.grandezza) then
+                        if(my2dArray.[fst(pos),snd(pos)+1]=false && haSpazioDx(fst(pos),snd(pos)+1))then
+                            my2dArray.[fst(pos),snd(pos)+1]<-true
+                        else ()
+                        (fst(pos), snd(pos)+2)
+                    else (pos)
+
+            let rec generaGIU (n) (pos:(int*int)) (oldDir):unit   =
+                match (pos) with
+                (pos) when (snd(pos) <= 1) || (fst(pos) >=this.grandezza-2) || (snd(pos) <=(-1))|| (snd(pos) >this.grandezza-3)||n=0 ->()
+                |(x,y)->if(my2dArray.[fst(pos),snd(pos)]=false && haSpazioGiu(fst(pos),snd(pos))) then
+                            my2dArray.[fst(pos),snd(pos)]<-true
+                        else
+                            let mutable currPos=nextInt.Next(1,4)
+                        
+                            while ((oldDir=currPos) || (oldDir-currPos=(-2)) || (oldDir-currPos=2) || (currPos-oldDir=2) || (currPos-oldDir=(-2))) do 
+                                let temp=nextInt.Next(1,4)
+                                currPos<-temp
+                            //printfn "CurrPos %A  " currPos
+                        
+                            let newPos=avanzaGIU (currPos) pos
+                            generaGIU (n-1) newPos currPos
+            //generaGIU (10,10) 2
+            //let uscita=(genera (grandezza-1) posIniziale 1)
+            
+            for i in 1..soluzione.Length-1 do
+                generaGIU 200 (soluzione.Item(i)) 1
+
+            for i in 1..soluzione.Length-1 do
+                generaSU 200 (soluzione.Item(i)) 1
+               
+            (*
+            for i in 0 .. this.grandezza-1 do
+                my2dArray.[i,0]<-false
+                my2dArray.[i,this.grandezza-1]<-false
+                my2dArray.[0,i]<-false
+                my2dArray.[this.grandezza-1,i]<-false
+            
+            my2dArray.[fst(uscita.Item(0)), snd(uscita.Item(0)) ]<-true
+            my2dArray.[fst(uscita.Item(uscita.Length-1)), snd(uscita.Item(uscita.Length-1)) ]<-true*)
+     
+            *)

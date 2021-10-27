@@ -1,19 +1,3 @@
-An example of snake in F#!
-
-![](Snakef.gif)
-
-
-Also go check the maze minigame in the 'MazeRunner' folder!
-Here are some screens of how it looks like and backtracking path finder...
-
-
-
-<img src="img1.PNG" alt="drawing" width="400"/>
- 
-<img src="img2.PNG" alt="drawing" width="400"/>
-
-
-
 # F-SHARP
 
 <div id="top"></div>
@@ -45,11 +29,14 @@ Here are some screens of how it looks like and backtracking path finder...
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<span><img src="img1.PNG" alt="drawing" width="400"/> <img src="gifDemo.gif" alt="drawing" width="400"/></span>
-
 These are my first two projects in F #, a programming language I learned at university
-* "MazeRunner" minigame: a maze is generated randomly, the player is shown the solution path, and once you start playing, the path disappears.
-* "Snake" is the classic minigame of the snake that has to eat the apple and grow bigger and bigger
+### "MazeRunner" minigame: a maze is generated randomly, the player is shown the solution path, and once you start playing, the path disappears.
+
+ <span><img src="Maze Path Finder.PNG" alt="drawing" width="300"/> <img src="Maze Gif.gif" alt="drawing" width="300"/></span>
+<br>
+
+### "Snake" is the classic minigame of the snake that has to eat the apple and grow bigger and bigger
+ <img src="Snakef.gif" alt="drawing" width="300"/>
 
 
 ### Built With
